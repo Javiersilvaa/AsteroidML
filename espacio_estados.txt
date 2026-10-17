@@ -1,0 +1,65 @@
+ESPACIO DE ESTADOS - MINERIA DE ASTEROIDES
+Caso Tipo A del Examen Parcial | Curso: Machine Learning (Unidad 2)
+
+OBJETIVO
+Representar formalmente el problema: llevar un proyecto de mineria de
+asteroides desde la exploracion hasta una operacion rentable gastando lo
+minimo posible.
+
+1. MODELO CONCEPTUAL
+Un estado es una tupla S = (fase tecnologica, capital, riesgo).
+
+2. ESTADOS
+  Estado | Fase tecnologica     | Capital       | Riesgo             | Cap. acum. (M USD)
+  -------+----------------------+---------------+--------------------+-------------------
+  S0     | exploracion          | poco capital  | riesgo alto        | 0     (INICIAL)
+  S1     | recursos detectados  | capital medio | riesgo alto        | 10
+  S2     | robotica madura      | capital medio | riesgo medio       | 35
+  S3     | mision demo OK       | capital alto  | riesgo medio       | 75
+  S4     | regulacion           | capital alto  | riesgo bajo        | 90
+  META   | operacion rentable   | capital alto  | riesgo controlado  | 150   (META)
+  PAUSA  | detenido             | -             | -                  | (TERMINAL)
+
+Estado inicial: S0
+Estado meta: META
+
+3. OPERADORES
+  Operador | Accion                  | Aplica en          | Lleva a | Costo (M USD)
+  ---------+-------------------------+--------------------+---------+--------------
+  A1       | Explorar                | S0                 | S1      | 10
+  A2       | Desarrollar robotica    | S1                 | S2      | 25
+  A3       | Mision demostrativa     | S2                 | S3      | 40
+  A4       | Cumplir regulacion      | S3                 | S4      | 15
+  A5       | Escalar la operacion    | S4                 | META    | 60
+  A6       | Pausar el proyecto      | S0, S1, S2, S3, S4 | PAUSA   | 0
+
+4. RESTRICCIONES
+  1) Orden obligatorio: las fases no se pueden saltar; un operador solo se
+     aplica en su estado de precondicion.
+  2) Costos no negativos; el costo de una ruta es la suma de sus operadores.
+  3) META y PAUSA son estados terminales (no tienen operadores de salida).
+  4) Pausar es definitivo: desde PAUSA no se vuelve a ninguna fase.
+  5) No hay retrocesos: el espacio no tiene ciclos.
+
+5. COSTO DE RUTA Y HEURISTICA
+  g = suma de los costos de los operadores aplicados.
+  h(n) = costo estimado que falta hasta la meta (para A*).
+  Estado | h(n) | costo real que falta | h <= real
+  S0     | 140  | 150                  | si
+  S1     | 130  | 140                  | si
+  S2     | 100  | 115                  | si
+  S3     |  70  |  75                  | si
+  S4     |  55  |  60                  | si
+  META   |   0  |   0                  | si
+  PAUSA  | 999  | no llega a la meta   | valor alto para descartarlo
+  La heuristica es admisible (nunca sobreestima el costo real).
+
+6. REPRESENTACION VISUAL
+  Ver el archivo espacio_estados.jpeg (grafo de estados y operadores).
+
+7. TAMANO Y OBSERVACIONES
+  - 7 estados y 10 transiciones (5 de avance y 5 hacia PAUSA).
+  - Un unico camino a la meta: S0 -> S1 -> S2 -> S3 -> S4 -> META,
+    con 5 operadores y costo total de 150 M USD.
+  - Es un espacio pequeno, pensado para verificarlo a mano. Si creciera,
+    la busqueda informada con heuristica evitaria explorar todo.
