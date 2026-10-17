@@ -58,7 +58,7 @@ No existen datos históricos masivos de minería de asteroides. Por eso el model
 
 | Rubro (5 pts c/u) | Dónde está | Estado |
 |---|---|---|
-| Presentación del Caso y Problema | `README.md`, `problema.txt`, `imagenes/problema_contexto.jpeg` | Listo |
+| Presentación del Caso y Problema | `README.md`, `problema.txt`, `problema_contexto.jpeg` | Listo |
 | Espacio de Estados | `espacio_estados.md`, `espacio_estados.txt` | Pendiente |
 | Pipeline Razonamiento, Búsqueda y Resultados | `01_pipeline_busqueda.ipynb` | Pendiente |
 | Pipeline Modelo de Predicción y Visualización | `02_pipeline_prediccion.ipynb` | Pendiente |
