@@ -1,11 +1,5 @@
 # Espacio de Estados: Minería de Asteroides
 
-**Caso:** Tipo A del Examen Parcial · **Curso:** Machine Learning (Unidad 2)
-
-El objetivo de este documento es representar formalmente el problema planteado en el [README](README.md): llevar un proyecto de minería de asteroides desde la exploración hasta una operación rentable, gastando lo mínimo posible. Aquí definimos los **estados**, los **operadores** y las **restricciones**, y los mostramos de forma visual.
-
----
-
 ## 1. Modelo conceptual
 
 Un estado describe en qué situación está el proyecto en un momento dado. Lo representamos con una tupla de tres componentes:
