@@ -1,3 +1,16 @@
+Challenge 2 : 
+
+Caso asignado : Minería de Asteroides
+
+Dato	Detalle
+Universidad	Universidad Peruana Cayetano Heredia
+Curso	Machine Learning
+Docente	Yannick Patrick Carrasco Merma
+Unidad	Fundamentos de Machine Learning (N° de Unidad 2)
+Estudiante	Javier Crhistofherd Silva Salinas
+
+
+
 Minería de Asteroides
 
 
