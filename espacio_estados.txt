@@ -1,5 +1,5 @@
 ESPACIO DE ESTADOS - MINERIA DE ASTEROIDES
-Caso Tipo A del Examen Parcial | Curso: Machine Learning (Unidad 2)
+
 
 OBJETIVO
 Representar formalmente el problema: llevar un proyecto de mineria de
