@@ -1,8 +1,3 @@
-CHALLENGE 1 (INDIVIDUAL): PIPELINE DE MACHINE LEARNING
-Caso: Tipo A - Minería de Asteroides
-Curso: Machine Learning - Unidad 2 (Fundamentos de Machine Learning)
-Docente: Yannick Patrick Carrasco Merma
-
 1. CASO
 Un proyecto de minería de asteroides empieza en fase de exploración, con poco
 capital y riesgo alto. Para llegar a una operación rentable debe pasar por
