@@ -1,0 +1,35 @@
+CHALLENGE 1 (INDIVIDUAL): PIPELINE DE MACHINE LEARNING
+Caso: Tipo A - Minería de Asteroides
+Curso: Machine Learning - Unidad 2 (Fundamentos de Machine Learning)
+Docente: Yannick Patrick Carrasco Merma
+
+1. CASO
+Un proyecto de minería de asteroides empieza en fase de exploración, con poco
+capital y riesgo alto. Para llegar a una operación rentable debe pasar por
+cinco fases, cada una con un costo (valores referenciales del caso, en
+millones de USD):
+  - Explorar y detectar recursos ........ 10
+  - Robótica madura ..................... 25
+  - Misión demostrativa ................. 40
+  - Regulación .......................... 15
+  - Escalar la operación ................ 60
+  Total hasta la meta ................... 150
+En cualquier fase se puede pausar el proyecto (costo 0) y detener la inversión.
+
+2. PROBLEMA
+¿En qué orden y con cuánta inversión conviene avanzar fase por fase para
+llegar a una operación rentable gastando lo mínimo posible, y qué retorno se
+puede esperar según el capital invertido?
+  - Pregunta de decisión: ¿cuál es la ruta más barata a la meta? (búsqueda)
+  - Pregunta de predicción: ¿cuánto retorno esperar con cierto capital? (regresión)
+
+3. POR QUÉ SE PUEDE ABORDAR CON IA Y MACHINE LEARNING
+  a) Son decisiones en secuencia: se modelan como espacio de estados y se
+     resuelven con búsqueda (BFS y A*, este último con heurística).
+  b) Equivocarse sale caro: comparar rutas y costos de forma sistemática es
+     más confiable que decidir a ojo, y escala mejor si el problema crece.
+  c) El retorno depende del capital y no hay fórmula exacta: se puede aprender
+     esa relación con un modelo de regresión y predecir para montos nuevos.
+  d) Limitación: no hay datos históricos masivos, por eso se usan datos
+     sintéticos o referenciales. El modelo es una demostración del pipeline,
+     no una herramienta para decidir inversiones reales.
