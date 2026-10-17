@@ -1,17 +1,5 @@
-# Challenge 1 (Individual): Pipeline de Machine Learning
+Minería de Asteroides
 
-**Caso asignado (Examen Parcial):** Tipo A, Minería de Asteroides
-
-| Dato | Detalle |
-|---|---|
-| Universidad | Universidad Peruana Cayetano Heredia |
-| Curso | Machine Learning |
-| Docente | Yannick Patrick Carrasco Merma |
-| Unidad | Fundamentos de Machine Learning (N° de Unidad 2) |
-| Estudiante | [Escribe aquí tu nombre completo] |
-| Usuario de GitHub | Javiersilvaa |
-
----
 
 ## 1. Presentación del caso
 
@@ -27,9 +15,9 @@ En el caso del Examen Parcial, un proyecto de este tipo arranca en **exploració
 
 En cualquier fase, la empresa también puede **pausar** el proyecto para no seguir gastando.
 
-![Contexto del caso](imagenes/problema_contexto.jpeg)
+![Contexto del caso](problema_contexto.jpeg)
 
-*Figura 1. Fases del proyecto con su costo referencial en millones de USD (valores del caso del Examen Parcial).*
+*Figura 1. Fases del proyecto con su costo referencial en millones de USD *
 
 ## 2. Problema que se desea resolver
 
@@ -54,15 +42,4 @@ No tenemos una fórmula exacta, pero sí podemos aprender la relación entre cap
 **d) Limitación que reconocemos.**
 No existen datos históricos masivos de minería de asteroides. Por eso el modelo de predicción usa **datos sintéticos o referenciales** construidos a partir del caso. Sirve para demostrar el pipeline y razonar sobre el problema, pero **no** para tomar decisiones reales de inversión.
 
-## 4. Estructura del repositorio y cumplimiento de la rúbrica
 
-| Rubro (5 pts c/u) | Dónde está | Estado |
-|---|---|---|
-| Presentación del Caso y Problema | `README.md`, `problema.txt`, `problema_contexto.jpeg` | Listo |
-| Espacio de Estados | `espacio_estados.md`, `espacio_estados.txt` | Pendiente |
-| Pipeline Razonamiento, Búsqueda y Resultados | `01_pipeline_busqueda.ipynb` | Pendiente |
-| Pipeline Modelo de Predicción y Visualización | `02_pipeline_prediccion.ipynb` | Pendiente |
-
-## 5. Herramientas
-
-GitHub (repositorio individual) y Google Colab (notebooks), con Python, NumPy, Matplotlib y scikit-learn.
