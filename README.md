@@ -2,15 +2,6 @@ Challenge 2 :
 
 Caso asignado : Minería de Asteroides
 
-Universidad:	Universidad Peruana Cayetano Heredia
-Curso: 	Machine Learning
-Docente:	Yannick Patrick Carrasco Merma
-Estudiante: Javier Crhistofherd Silva Salinas
-
-
-
-Minería de Asteroides
-
 
 ## 1. Presentación del caso
 
